@@ -20,3 +20,17 @@ model User {
   password  String
   createdAt DateTime @default(now())
 }
+
+model Ship {
+  id  String @id @default(cuid())
+  shipName  String
+  IMO String  @unique
+  flag  String
+  tonnage     Float
+  originPort  String
+  originPortName  String
+  destinationPort  String
+  destinationPortName  String
+  collectionAmount Int
+  createdAt DateTime @default(now())
+}

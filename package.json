@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "20"
+  },
   "scripts": {
-    "dev": "tsx src/server.ts"
+    "dev": "tsx src/server.ts",
+    "build": "tsup src",
+    "start": "node dist/server.js",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
+  },
   "devDependencies": {
     "@types/node": "^20.14.2",
     "tsup": "^8.1.0",
@@ -17,6 +27,7 @@
   },
   "dependencies": {
     "@prisma/client": "^5.15.0",
+    "dotenv": "^16.4.5",
     "fastify": "^4.27.0",
     "pg": "^8.12.0",
     "prisma": "^5.15.0",
