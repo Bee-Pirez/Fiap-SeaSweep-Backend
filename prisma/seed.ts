@@ -1,18 +1,26 @@
 import { prisma } from '../src/lib/prisma';
+import bcrypt from 'bcrypt';
 
 async function seed() {
+
+  const saltRounds = 10;
+
+  // Hashear as senhas
+  const hashedPasswordAlice = await bcrypt.hash('alicepassword123', saltRounds);
+  const hashedPasswordJoao = await bcrypt.hash('joaopassword123', saltRounds);
+
  
   await prisma.user.createMany({
     data: [
       {
         name: 'Alice Correia',
         email: 'alice@example.com',
-        password: 'alicepassword123',
+        password: hashedPasswordAlice,
       },
       {
         name: 'João Vilela',
         email: 'joao@example.com',
-        password: 'joaopassword123',
+        password: hashedPasswordJoao,
       },
     ],
   });
