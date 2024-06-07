@@ -30,7 +30,7 @@ async function seed() {
       {
         shipName: 'HMM Algericas',
         IMO: '9863297',
-        flag: 'Korea',
+        flag: 'KR',
         tonnage: 1200.5,
         originPort: '35.102556, 129.043860',
         originPortName: 'Busan Port',
@@ -41,7 +41,7 @@ async function seed() {
       {
         shipName: 'HMM Copenhagen',
         IMO: '9863302',
-        flag: 'Korea',
+        flag: 'KR',
         tonnage: 1800.7,
         originPort: '55.671666, 12.585526',
         originPortName: 'Port of Copenhagen',
@@ -52,7 +52,7 @@ async function seed() {
       {
         shipName: 'MSC VENICE',
         IMO: '9647473',
-        flag: 'Liberia',
+        flag: 'LR',
         tonnage: 2200.9,
         originPort: '35.104345, 129.042830',
         originPortName: 'Busan Port',
@@ -63,7 +63,7 @@ async function seed() {
       {
         shipName: 'EVER GOODS',
         IMO: '9810991',
-        flag: 'Panama',
+        flag: 'PAN',
         tonnage: 1900.3,
         originPort: '8.937941, -79.555833',
         originPortName: 'Porto de Panama City (Balboa)',
@@ -74,7 +74,7 @@ async function seed() {
       {
         shipName: 'MONACO MAERSK',
         IMO: '9778832',
-        flag: 'Denmark',
+        flag: 'DK',
         tonnage: 2500.2,
         originPort: '56.170200, 10.232500',
         originPortName: 'Port of Aarhus',
@@ -85,7 +85,7 @@ async function seed() {
       {
         shipName: 'COSCO SHIPPING SOLAR',
         IMO: '9795646',
-        flag: 'Hong Kong',
+        flag: 'HK',
         tonnage: 1700.6,
         originPort: '35.45706684934256, 139.65090672024135',
         originPortName: 'Port of Yokohama',
@@ -96,7 +96,7 @@ async function seed() {
       {
         shipName: 'MONTE SARMIENTO',
         IMO: '9283227',
-        flag: 'Brazil',
+        flag: 'BR',
         tonnage: 2100.8,
         originPort: '-23.964844, -46.300737',
         originPortName: 'Porto de Santos',
