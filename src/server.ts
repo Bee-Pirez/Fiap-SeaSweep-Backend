@@ -2,10 +2,15 @@ import fastify from "fastify";
 import { z } from "zod";
 import dotenv from "dotenv";
 import { routes } from './routes';
+import cors from "@fastify/cors";
 
 dotenv.config();
 
 const app = fastify();
+
+app.register(cors, {
+  origin: '*', 
+});
 
 routes(app);
 

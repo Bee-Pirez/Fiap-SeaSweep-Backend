@@ -27,11 +27,11 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
+    "@fastify/cors": "^9.0.1",
     "@prisma/client": "^5.15.0",
     "@types/bcrypt": "^5.0.2",
     "bcrypt": "^5.1.1",
     "bcryptjs": "^2.4.3",
-    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "fastify": "^4.27.0",
     "jsonwebtoken": "^9.0.2",
